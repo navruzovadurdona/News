@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Instagram Профиль</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fafafa;
+    }
+
+    .profile {
+      max-width: 900px;
+      margin: 50px auto;
+      padding: 20px;
+      background: #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .profile-header {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .profile-header img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin-right: 30px;
+    }
+
+    .profile-info {
+      flex: 1;
+      min-width: 250px;
+    }
+
+    .profile-info h2 {
+      margin: 0;
+      font-size: 28px;
+    }
+
+    .stats {
+      display: flex;
+      gap: 20px;
+      margin: 15px 0;
+    }
+
+    .stats div {
+      font-weight: bold;
+    }
+
+    .bio {
+      font-size: 16px;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 10px;
+    }
+
+    .button {
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .follow {
+      background-color: #3b82f6;
+      color: white;
+    }
+
+    .follow:hover {
+      transform: scale(1.05);
+      background-color: #2563eb;
+      box-shadow: 0 4px 15px rgba(59,130,246,0.4);
+    }
+
+    .message {
+      background-color: white;
+      color: #3b82f6;
+      border: 2px solid #3b82f6;
+    }
+
+    .message:hover {
+      background-color: #3b82f6;
+      color: white;
+      transform: scale(1.05);
+      box-shadow: 0 4px 15px rgba(59,130,246,0.3);
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 5px;
+      margin-top: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="profile">
+    <div class="profile-header">
+      <img src="https://via.placeholder.com/150" alt="Аватар">
+      <div class="profile-info">
+        <h2>@smart.razzakov</h2>
+        <div class="stats">
+          <div><strong>56</strong> постов</div>
+          <div><strong>1.2k</strong> подписчиков</div>
+          <div><strong>320</strong> подписки</div>
+        </div>
+        <div class="bio">
+          SmartRazzakov | Блог о технологиях<br>
+          Разработка сайтов и IT-инновации<br>
+          🌐 smartrazzakov.kg
+        </div>
+        <div class="buttons">
+          <button class="button follow">Подписаться</button>
+          <button class="button message">Написать</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="gallery">
+      <img src="https://source.unsplash.com/random/301x301" alt="пост">
+      <img src="https://source.unsplash.com/random/302x302" alt="пост">
+      <img src="https://source.unsplash.com/random/303x303" alt="пост">
+      <img src="https://source.unsplash.com/random/304x304" alt="пост">
+      <img src="https://source.unsplash.com/random/305x305" alt="пост">
+      <img src="https://source.unsplash.com/random/306x306" alt="пост">
+    </div>
+  </div>
+
+</body>
+</html>
